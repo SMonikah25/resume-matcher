@@ -1,4 +1,4 @@
 stremalit
 pdfplumber
 nltk
-scikit-learn
+sklearn
