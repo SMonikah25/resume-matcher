@@ -1,4 +1,0 @@
-stremalit
-pdfplumber
-nltk
-scikit-learn
