@@ -1,4 +1,4 @@
-stremalit
+streamlit
 pdfplumber
 nltk
 sklearn
