@@ -28,8 +28,6 @@ def clean_text(text):
 def find_skills(text):
     return [s for s in skills_list if re.search(r"\b" + s + r"\b", text)]
 
-
-st.title("Resume Matcher")
 st.title("Resume Gap Finder")
 st.caption("Upload your resume, paste a job description, and see which skills you have and which are missing.")
 
