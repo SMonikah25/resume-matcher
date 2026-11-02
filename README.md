@@ -17,5 +17,8 @@ Python, pdfplumber, NLTK, scikit-learn
 2. Put a resume file named `resume.pdf` in the project folder
 3. Run: `python main.py`
 
+## Live Demo
+https://resume-gap-finder.streamlit.app
+
 ## Author
 Monika
