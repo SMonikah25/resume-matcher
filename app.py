@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+st.set_page_config(page_title="Resume Gap Finder")
 nltk.download("stopwords", quiet=True)
 stop_words = set(stopwords.words("english"))
 
@@ -29,6 +30,8 @@ def find_skills(text):
 
 
 st.title("Resume Matcher")
+st.title("Resume Gap Finder")
+st.caption("Upload your resume, paste a job description, and see which skills you have and which are missing.")
 
 uploaded_file = st.file_uploader("Upload your resume (PDF)", type="pdf")
 job_description = st.text_area("Paste the job description here", height=200)
@@ -57,5 +60,6 @@ if st.button("Check Match"):
 
         st.subheader("Result")
         st.metric("Match Score", str(match_percentage) + " %")
+        st.progress(min(int(match_percentage), 100))
         st.write("**Matched skills:**", ", ".join(matched) if matched else "None")
         st.write("**Missing skills:**", ", ".join(missing) if missing else "None")
