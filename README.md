@@ -1,4 +1,4 @@
-# Resume Matcher
+# Resume Gap Finder
 
 A Python project that compares a resume with a job description and shows a match score, matched skills and missing skills.
 
